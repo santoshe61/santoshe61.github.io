@@ -34,7 +34,7 @@
     :root {
       --primary: #00f0ff;
       --secondary: #ff00ff;
-      --primary-light:rgb(192, 192, 192);
+      --primary-light: #f8f8f8;
       --text: #4a4a6a;
       --muted: #7a7a9a;
       --bg: #f8fafc;
@@ -69,6 +69,10 @@
       color: var(--primary);
       font-weight: 600;
       font-size: 1.1rem;
+    }
+
+    .section-title {
+      margin-top: 40px;
     }
 
     .summary {
@@ -138,7 +142,7 @@
       display: inline-block;
       margin-top: 16px;
       margin-right: 10px;
-      padding: 12px 22px;
+      padding: 12px;
       background: var(--primary);
       color: white;
       text-decoration: none;
@@ -195,6 +199,48 @@
     Principal Web Developer • Full Stack JS Engineer • AI Enthusiast
   </div>
 
+  <div class="notice">
+
+    <h2>Portfolio Website</h2>
+
+    <p>
+      My latest portfolio, open-source projects, certifications,
+      technical articles, and professional experience has now a new address on web 😊.
+    </p>
+
+    <div class="redirect-box">
+      <div class="redirect-title">
+        🚀 You are being redirected to <a href="https://santosh.top" class="cancel-link">https://santosh.top</a>
+      </div>
+
+      <div id="redirectMessage">
+        in
+        <span class="countdown" id="timer">20</span>
+        seconds.
+        <a href="#" id="cancelRedirect" class="cancel-link">
+          Cancel
+        </a>
+      </div>
+    </div>
+
+    <a
+      class="btn"
+      href="https://santosh.top"
+    >
+      Visit Portfolio
+    </a>
+
+    <a
+      class="btn btn-secondary"
+      href="https://github.com/santoshe61"
+    >
+      GitHub Profile
+    </a>
+
+  </div>
+
+  <h2 class="section-title">About Me</h2>
+
   <p class="summary">
     Principal Web Developer with 10+ years of experience designing, building,
     and scaling enterprise-grade web applications across SaaS, government,
@@ -224,46 +270,6 @@
     <span class="skill">MACH</span>
   </div>
 
-  <div class="notice">
-
-    <h2>Portfolio Website</h2>
-
-    <p>
-      My latest portfolio, open-source projects, certifications,
-      technical articles, and professional experience has now a new address on web 😊.
-    </p>
-
-    <div class="redirect-box">
-      <div class="redirect-title">
-        🚀 You are being redirected to my primary portfolio website <strong>https://santosh.top</strong>
-      </div>
-
-      <div id="redirectMessage">
-        Redirecting automatically in
-        <span class="countdown" id="timer">10</span>
-        seconds.
-        <a href="#" id="cancelRedirect" class="cancel-link">
-          Cancel redirect
-        </a>
-      </div>
-    </div>
-
-    <a
-      class="btn"
-      href="https://santosh.top"
-    >
-      Visit Portfolio
-    </a>
-
-    <a
-      class="btn btn-secondary"
-      href="https://github.com/santoshe61"
-    >
-      GitHub Profile
-    </a>
-
-  </div>
-
   <footer>
     © <span id="year"></span> Santosh Ojha • Principal Web Developer
   </footer>
@@ -273,7 +279,7 @@
 <script>
   const PORTFOLIO_URL = "https://santosh.top";
 
-  let remaining = 10;
+  let remaining = 20;
   let redirectCancelled = false;
 
   const timer = document.getElementById("timer");

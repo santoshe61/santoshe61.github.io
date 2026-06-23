@@ -1,84 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Travel Site</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Santosh Ojha | Principal Web Developer</title>
+
+  <meta
+    name="description"
+    content="Santosh Ojha is a Principal Web Developer with 10+ years of experience building enterprise-grade web applications, SaaS platforms, MACH architectures, AI-driven systems, and modern frontend solutions using Vue.js, React, Node.js, and MongoDB."
+  />
+
+  <meta
+    name="keywords"
+    content="Santosh Ojha, Principal Web Developer, VueJS Developer, React Developer, NodeJS Developer, Full Stack Developer, MACH Architecture, SaaS, AI, RAG, LangChain, Contentful, AEM"
+  />
+
+  <meta name="author" content="Santosh Ojha" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Santosh Ojha | Principal Web Developer" />
+  <meta
+    property="og:description"
+    content="10+ years of experience building scalable web applications, SaaS platforms, enterprise systems, headless CMS solutions, and AI-powered applications."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR_GITHUB_USERNAME.github.io" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://YOUR_DOMAIN.com" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Santosh Ojha",
+    "jobTitle":"Principal Web Developer",
+    "description":"Principal Web Developer with 10+ years of experience in enterprise applications, SaaS platforms, AI systems, and modern web architecture.",
+    "knowsAbout":[
+      "Vue.js",
+      "React",
+      "Next.js",
+      "Nuxt.js",
+      "Node.js",
+      "MongoDB",
+      "PHP",
+      "Headless CMS",
+      "MACH Architecture",
+      "LangChain",
+      "RAG",
+      "Generative AI"
+    ],
+    "url":"https://YOUR_DOMAIN.com"
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --bg: #f8fafc;
+      --text: #1e293b;
+      --muted: #64748b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+      font-size: 3rem;
+    }
+
+    .subtitle {
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .summary {
+      font-size: 1.05rem;
+      color: var(--muted);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 30px 0;
+    }
+
+    .skill {
+      background: white;
+      border: 1px solid #e2e8f0;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+    }
+
+    .notice {
+      margin-top: 40px;
+      padding: 24px;
+      background: white;
+      border-left: 5px solid var(--primary);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.05);
+    }
+
+    .countdown {
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      margin-right: 10px;
+      padding: 12px 22px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+
+    .btn.secondary {
+      background: #334155;
+    }
+
+    footer {
+      margin-top: 50px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">My Bootstrap Site</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                <button class="btn btn-outline-danger my-2 my-sm-0 ml-2" type="reset">Clear</button>
-            </form>
-        </div>
-    </nav>
 
-    <div class="container mt-4">
-        <h1>Welcome to My Bootstrap Site</h1>
-        <h3>Introduction : </h3>
-        <p>This site showcases various travel recommendations including beaches, temples, and countries to visit.</p>
-        <p>Welcome to our travel recommendation website, your ultimate guide to exploring the world's most beautiful destinations. Whether you're a seasoned traveler or planning your first adventure, our site is designed to provide you with the best travel tips, recommendations, and inspiration. From pristine beaches to ancient temples and vibrant countries, we cover a wide range of destinations to suit every traveler's taste.</p>
+<div class="container">
 
-        <p>Our team of travel experts has meticulously curated a list of must-visit places, ensuring that you have an unforgettable experience wherever you go. We believe that travel is not just about visiting new places, but also about immersing yourself in different cultures, meeting new people, and creating lasting memories. That's why we provide detailed information on each destination, including the best time to visit, top attractions, local cuisine, and cultural insights.</p>
+  <h1>Santosh Ojha</h1>
 
-        <p>In addition to destination guides, our website also offers practical travel advice to help you plan your trip with ease. From packing tips to safety guidelines and budget travel hacks, we've got you covered. We understand that every traveler has unique preferences and needs, so we strive to provide personalized recommendations that cater to different interests and budgets.</p>
+  <div class="subtitle">
+    Principal Web Developer • Full Stack Engineer • AI Enthusiast
+  </div>
 
-        <p>Join our community of travel enthusiasts and embark on a journey of discovery with us. Whether you're looking for a relaxing beach getaway, a spiritual retreat at a temple, or an adventurous exploration of a new country, our travel recommendation website is here to inspire and guide you every step of the way. Happy travels!</p>
+  <p class="summary">
+    Principal Web Developer with 10+ years of experience designing,
+    building, and scaling enterprise-grade web applications across
+    government, legal, energy, SaaS, and digital transformation domains.
+  </p>
 
-        <h2>Beach Recommendations</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <img src="https://www.bestbus.in/assets/ckfinder/userfiles/images/anjuna-beach.jpg" class="img-fluid" alt="Beach 1">
-            </div>
-            <div class="col-md-6">
-                <img src="https://images.unsplash.com/opengraph/1x1.png?mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-w=64&mark-align=top%2Cleft&mark-pad=50&h=630&w=1200&blend=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1597488877510-5c43e9af1d42%3Fcrop%3Dfaces%252Cedges%26h%3D630%26w%3D1200%26blend%3D000000%26blend-mode%3Dnormal%26blend-alpha%3D10%26mark-w%3D750%26mark-align%3Dmiddle%252Ccenter%26mark%3Dhttps%253A%252F%252Fimages.unsplash.com%252Fopengraph%252Fsearch-input.png%253Fw%253D750%2526h%253D84%2526txt%253Dpuri%252Bsea%252Bbeach%252Bpuri%252Bindia%2526txt-pad%253D80%2526txt-align%253Dmiddle%25252Cleft%2526txt-color%253D%252523000000%2526txt-size%253D40%2526txt-width%253D660%2526txt-clip%253Dellipsis%2526auto%253Dformat%2526fit%253Dcrop%2526q%253D60%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixid%3DM3wxMjA3fDB8MXxzZWFyY2h8Mnx8cHVyaSUyMHNlYSUyMGJlYWNoJTIwcHVyaSUyMGluZGlhfGVufDB8fHx8MTczNjIxOTQ4OHww%26ixlib%3Drb-4.0.3&blend-w=1&auto=format&fit=crop&q=60" class="img-fluid" alt="Beach 2">
-            </div>
-        </div>
+  <p class="summary">
+    Specialized in Vue.js, React, Next.js, Nuxt.js, Node.js, MongoDB,
+    Headless CMS, MACH Architecture, Agentic AI, RAG Systems,
+    LangChain, and modern cloud-native application development.
+  </p>
 
-        <h2>Temple Recommendations</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <img src="https://i.ytimg.com/vi/Ba69G55YOw8/maxresdefault.jpg" class="img-fluid" alt="Temple 1">
-            </div>
-            <div class="col-md-6">
-                <img src="https://www.sushanttravels.com/blog/2019/11/1573222653.jpg" class="img-fluid" alt="Temple 2">
-            </div>
-        </div>
+  <div class="skills">
+    <span class="skill">Vue.js</span>
+    <span class="skill">React</span>
+    <span class="skill">Next.js</span>
+    <span class="skill">Nuxt.js</span>
+    <span class="skill">Node.js</span>
+    <span class="skill">MongoDB</span>
+    <span class="skill">Contentful</span>
+    <span class="skill">AEM</span>
+    <span class="skill">LangChain</span>
+    <span class="skill">RAG</span>
+    <span class="skill">AI Systems</span>
+    <span class="skill">MACH</span>
+  </div>
 
-        <h2>Country Recommendations</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <img src="https://innovativezoneindia.com/wp-content/uploads/2022/10/Top-10-Best-Places-to-Visit-in-India-in-October-November-2022.jpg" class="img-fluid" alt="Country 1">
-            </div>
-            <div class="col-md-6">
-                <img src="https://www.savaari.com/blog/wp-content/uploads/2023/09/India-Gate.webp" class="img-fluid" alt="Country 2">
-            </div>
-        </div>
-    </div>
+  <div class="notice">
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="./script.js"></script>
+    <h3>Portfolio Website</h3>
+
+    <p>
+      My latest portfolio, projects, technical articles, open-source work,
+      certifications, and professional experience are available at:
+    </p>
+
+    <p>
+      <strong>https://YOUR_DOMAIN.com</strong>
+    </p>
+
+    <p>
+      You will be redirected automatically in
+      <span class="countdown" id="timer">10</span>
+      seconds.
+    </p>
+
+    <a
+      class="btn"
+      href="https://YOUR_DOMAIN.com"
+    >
+      Visit Portfolio
+    </a>
+
+    <a
+      class="btn secondary"
+      href="https://github.com/YOUR_GITHUB_USERNAME"
+    >
+      GitHub Profile
+    </a>
+
+  </div>
+
+  <footer>
+    © 2026 Santosh Ojha • Principal Web Developer
+  </footer>
+
+</div>
+
+<script>
+  let remaining = 10;
+
+  const timer = document.getElementById("timer");
+
+  const interval = setInterval(() => {
+    remaining--;
+    timer.textContent = remaining;
+
+    if (remaining <= 0) {
+      clearInterval(interval);
+      window.location.href = "https://YOUR_DOMAIN.com";
+    }
+  }, 1000);
+</script>
+
 </body>
 </html>

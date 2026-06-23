@@ -8,60 +8,34 @@
 
   <meta
     name="description"
-    content="Santosh Ojha is a Principal Web Developer with 10+ years of experience building enterprise-grade web applications, SaaS platforms, MACH architectures, AI-driven systems, and modern frontend solutions using Vue.js, React, Node.js, and MongoDB."
+    content="Santosh Ojha is a Principal Web Developer with 10+ years of experience building enterprise-grade web applications, SaaS platforms, MACH architectures, AI-driven systems, and modern frontend solutions."
   />
 
   <meta
     name="keywords"
-    content="Santosh Ojha, Principal Web Developer, VueJS Developer, React Developer, NodeJS Developer, Full Stack Developer, MACH Architecture, SaaS, AI, RAG, LangChain, Contentful, AEM"
+    content="Santosh Ojha, Principal Web Developer, VueJS, ReactJS, NextJS, NuxtJS, NodeJS, MongoDB, AI, RAG, LangChain, MACH Architecture"
   />
 
   <meta name="author" content="Santosh Ojha" />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="Santosh Ojha | Principal Web Developer" />
   <meta
     property="og:description"
-    content="10+ years of experience building scalable web applications, SaaS platforms, enterprise systems, headless CMS solutions, and AI-powered applications."
+    content="Principal Web Developer with 10+ years of experience in enterprise applications, SaaS platforms, AI systems, and modern web architecture."
   />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://YOUR_GITHUB_USERNAME.github.io" />
+  <meta property="og:url" content="https://santoshe61.github.io" />
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://YOUR_DOMAIN.com" />
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Santosh Ojha",
-    "jobTitle":"Principal Web Developer",
-    "description":"Principal Web Developer with 10+ years of experience in enterprise applications, SaaS platforms, AI systems, and modern web architecture.",
-    "knowsAbout":[
-      "Vue.js",
-      "React",
-      "Next.js",
-      "Nuxt.js",
-      "Node.js",
-      "MongoDB",
-      "PHP",
-      "Headless CMS",
-      "MACH Architecture",
-      "LangChain",
-      "RAG",
-      "Generative AI"
-    ],
-    "url":"https://YOUR_DOMAIN.com"
-  }
-  </script>
+  <link rel="canonical" href="https://santosh.top" />
 
   <style>
     :root {
-      --primary: #2563eb;
+      --primary: #00f0ff;
+      --secondary: #ff00ff;
+      --primary-light:rgb(192, 192, 192);
+      --text: #4a4a6a;
+      --muted: #7a7a9a;
       --bg: #f8fafc;
-      --text: #1e293b;
-      --muted: #64748b;
     }
 
     * {
@@ -83,53 +57,84 @@
     }
 
     h1 {
-      margin-bottom: 8px;
+      margin: 0;
       font-size: 3rem;
+      line-height: 1.1;
     }
 
     .subtitle {
+      margin-top: 12px;
       color: var(--primary);
       font-weight: 600;
-      margin-bottom: 24px;
+      font-size: 1.1rem;
     }
 
     .summary {
-      font-size: 1.05rem;
+      margin-top: 24px;
       color: var(--muted);
+      font-size: 1.05rem;
     }
 
     .skills {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin: 30px 0;
+      margin: 32px 0;
     }
 
     .skill {
-      background: white;
-      border: 1px solid #e2e8f0;
       padding: 8px 14px;
       border-radius: 999px;
+      background: white;
+      border: 1px solid #e2e8f0;
       font-size: 14px;
     }
 
     .notice {
       margin-top: 40px;
-      padding: 24px;
+      padding: 28px;
       background: white;
-      border-left: 5px solid var(--primary);
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0,0,0,.06);
+    }
+
+    .notice h2 {
+      margin-top: 0;
+    }
+
+    .redirect-box {
+      margin: 24px 0;
+      padding: 18px;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,.05);
+      background: var(--primary-light);
+      border: 1px solid #93c5fd;
+    }
+
+    .redirect-title {
+      font-weight: 700;
+      color: #1e40af;
+      margin-bottom: 8px;
     }
 
     .countdown {
-      color: var(--primary);
-      font-weight: bold;
+      font-weight: 700;
+      color: #1e40af;
+    }
+
+    .cancel-link {
+      margin-left: 10px;
+      color: #1e40af;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .cancel-link:hover {
+      text-decoration: underline;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 15px;
+      margin-top: 16px;
       margin-right: 10px;
       padding: 12px 22px;
       background: var(--primary);
@@ -139,7 +144,7 @@
       font-weight: 600;
     }
 
-    .btn.secondary {
+    .btn-secondary {
       background: #334155;
     }
 
@@ -148,6 +153,26 @@
       color: var(--muted);
       font-size: 14px;
     }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .container {
+        padding: 40px 20px;
+      }
+    }
+    .nav-logo {
+      text-decoration: none;
+      color: var(--text);
+    }
+    .logo-bracket {
+      color: var(--primary);
+    }
+    .logo-slash {
+      color: var(--secondary);
+    }
   </style>
 </head>
 
@@ -155,68 +180,86 @@
 
 <div class="container">
 
-  <h1>Santosh Ojha</h1>
+  <h1>
+    <a href="https://santosh.top" class="nav-logo">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-name">Santosh.Ojha</span>
+      <span class="logo-slash">/</span>
+      <span class="logo-bracket">&gt;</span>
+    </a>
+  </h1>
 
   <div class="subtitle">
-    Principal Web Developer • Full Stack Engineer • AI Enthusiast
+    Principal Web Developer • Full Stack JS Engineer • AI Enthusiast
   </div>
 
   <p class="summary">
-    Principal Web Developer with 10+ years of experience designing,
-    building, and scaling enterprise-grade web applications across
-    government, legal, energy, SaaS, and digital transformation domains.
+    Principal Web Developer with 10+ years of experience designing, building,
+    and scaling enterprise-grade web applications across SaaS, government,
+    legal, energy, and digital transformation domains.
   </p>
 
   <p class="summary">
     Specialized in Vue.js, React, Next.js, Nuxt.js, Node.js, MongoDB,
     Headless CMS, MACH Architecture, Agentic AI, RAG Systems,
-    LangChain, and modern cloud-native application development.
+    LangChain, and cloud-native application development.
   </p>
 
   <div class="skills">
+    <span class="skill">Agentic AI</span>
     <span class="skill">Vue.js</span>
     <span class="skill">React</span>
     <span class="skill">Next.js</span>
     <span class="skill">Nuxt.js</span>
     <span class="skill">Node.js</span>
+    <span class="skill">Php</span>
     <span class="skill">MongoDB</span>
+    <span class="skill">MySQL</span>
     <span class="skill">Contentful</span>
     <span class="skill">AEM</span>
-    <span class="skill">LangChain</span>
+    <span class="skill">LangChain & Langraph</span>
     <span class="skill">RAG</span>
-    <span class="skill">AI Systems</span>
     <span class="skill">MACH</span>
   </div>
 
   <div class="notice">
 
-    <h3>Portfolio Website</h3>
+    <h2>Portfolio Website</h2>
 
     <p>
-      My latest portfolio, projects, technical articles, open-source work,
-      certifications, and professional experience are available at:
+      My latest portfolio, open-source projects, certifications,
+      technical articles, and professional experience are available at:
     </p>
 
     <p>
-      <strong>https://YOUR_DOMAIN.com</strong>
+      <strong>https://santosh.top</strong>
     </p>
 
-    <p>
-      You will be redirected automatically in
-      <span class="countdown" id="timer">10</span>
-      seconds.
-    </p>
+    <div class="redirect-box">
+      <div class="redirect-title">
+        🚀 You are being redirected to my primary portfolio website.
+      </div>
+
+      <div id="redirectMessage">
+        Redirecting automatically in
+        <span class="countdown" id="timer">10</span>
+        seconds.
+        <a href="#" id="cancelRedirect" class="cancel-link">
+          Cancel redirect
+        </a>
+      </div>
+    </div>
 
     <a
       class="btn"
-      href="https://YOUR_DOMAIN.com"
+      href="https://santosh.top"
     >
       Visit Portfolio
     </a>
 
     <a
-      class="btn secondary"
-      href="https://github.com/YOUR_GITHUB_USERNAME"
+      class="btn btn-secondary"
+      href="https://github.com/santoshe61"
     >
       GitHub Profile
     </a>
@@ -224,25 +267,54 @@
   </div>
 
   <footer>
-    © 2026 Santosh Ojha • Principal Web Developer
+    © <span id="year"></span> Santosh Ojha • Principal Web Developer
   </footer>
 
 </div>
 
 <script>
+  const PORTFOLIO_URL = "https://santosh.top";
+
   let remaining = 10;
+  let redirectCancelled = false;
 
   const timer = document.getElementById("timer");
+  const cancelLink = document.getElementById("cancelRedirect");
+  const redirectMessage = document.getElementById("redirectMessage");
+  const year = document.getElementById("year");
+
+  year.textContent = new Date().getFullYear();
 
   const interval = setInterval(() => {
+
+    if (redirectCancelled) {
+      clearInterval(interval);
+      return;
+    }
+
     remaining--;
+
     timer.textContent = remaining;
 
     if (remaining <= 0) {
       clearInterval(interval);
-      window.location.href = "https://YOUR_DOMAIN.com";
+      window.location.href = PORTFOLIO_URL;
     }
+
   }, 1000);
+
+  cancelLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    clearInterval(interval);
+    redirectCancelled = true;
+
+    redirectMessage.innerHTML =
+      `<strong>Automatic redirect cancelled.</strong>
+        <a href="${PORTFOLIO_URL}" class="cancel-link">
+          Redirect now
+        </a>
+      `;
+  });
 </script>
 
 </body>
